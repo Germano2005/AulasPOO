@@ -63,6 +63,6 @@ public class Main {
                 "MARCA........................ " + veiculo.getModelo().getMarca().getNome() + "\n" +
                 "POTÊNCIA.................. " + veiculo.getModelo().getMotor().getPotencia() + "\n" +
                 "COMBUSTÍVEL.......... " + veiculo.getModelo().getMotor().getCombustivel() + "\n" +
-                "CATEGORIA................. " + veiculo.getModelo().getCategoria());
+                "CATEGORIA................. " + veiculo.getModelo().getCategoria().getMostra());
     }
 }
