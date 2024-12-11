@@ -40,6 +40,7 @@ public class Main {
                     null,
                     categorias,
                     categorias[0]);
+            veiculo.setObservacoes(JOptionPane.showInputDialog("Observações do veículo"));
             modelo.setCategoria(selecionadoCA);
             veiculo.setCor(cor);
             veiculo.setModelo(modelo);
@@ -56,13 +57,14 @@ public class Main {
     public static void print(Veiculo veiculo){
         JOptionPane.showMessageDialog(null,
                 "INFORMAÇÕES DO VEÍCULO:" + "\n" +
-                "ID.................................. " + veiculo.getId() + "\n" +
-                "PLACA.......................... " + veiculo.getPlaca() + "\n" +
-                "COR............................. " + veiculo.getCor().getNome() + "\n" +
-                "MODELO..................... " + veiculo.getModelo().getDescricao() + "\n" +
-                "MARCA........................ " + veiculo.getModelo().getMarca().getNome() + "\n" +
-                "POTÊNCIA.................. " + veiculo.getModelo().getMotor().getPotencia() + "\n" +
-                "COMBUSTÍVEL.......... " + veiculo.getModelo().getMotor().getCombustivel() + "\n" +
-                "CATEGORIA................. " + veiculo.getModelo().getCategoria().getMostra());
+                "ID - " + veiculo.getId() + "\n" +
+                "PLACA - " + veiculo.getPlaca() + "\n" +
+                "COR - " + veiculo.getCor().getNome() + "\n" +
+                "MODELO - " + veiculo.getModelo().getDescricao() + "\n" +
+                "MARCA - " + veiculo.getModelo().getMarca().getNome() + "\n" +
+                "POTÊNCIA - " + veiculo.getModelo().getMotor().getPotencia() + "\n" +
+                "COMBUSTÍVEL - " + veiculo.getModelo().getMotor().getCombustivel() + "\n" +
+                "CATEGORIA - " + veiculo.getModelo().getCategoria() + "\n" +
+                "OBSERVAÇÕES - " + veiculo.getObservacoes());
     }
 }
