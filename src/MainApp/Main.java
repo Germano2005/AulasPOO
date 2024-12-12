@@ -30,7 +30,7 @@ public class Main {
                     JOptionPane.QUESTION_MESSAGE,
                     null,
                     combustiveis,
-                    combustiveis[0]);
+                    combustiveis[0]); // Tipo de combustível
             modelo.getMotor().setCombustivel(selecionadoCO);
             ECategoria selecionadoCA = (ECategoria) JOptionPane.showInputDialog(
                     null,
@@ -39,14 +39,15 @@ public class Main {
                     JOptionPane.QUESTION_MESSAGE,
                     null,
                     categorias,
-                    categorias[0]);
-            veiculo.setObservacoes(JOptionPane.showInputDialog("Observações do veículo"));
+                    categorias[0]); // Tipo de categoria
+            veiculo.setObservacoes(JOptionPane.showInputDialog("Observações do veículo")); // observações
             modelo.setCategoria(selecionadoCA);
             veiculo.setCor(cor);
             veiculo.setModelo(modelo);
 
             print(veiculo);
             pergunta = JOptionPane.showConfirmDialog(null, "Deseja adicionar mais um veículo?");
+            // 0=yes, 1=no, 2=cancel
             id++;
             veiculo.setId(id);
         }while (pergunta == 0);
